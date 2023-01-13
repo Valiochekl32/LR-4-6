@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+body {
+    background-color: #533953;
+}
+.container, header {
+    display: block;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fecdfe;
+}
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 35px;
+}
+header .descr {
+    margin-top: 10px;
+    font-size: 25px;
+}
+.name-group {
+    display: flex;
+    margin-left: 300px;
+    font-weight: bold;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1c0f1;
+    width: 177px;
+    height: 40px;
+}
+.content-block {
+    background: #cc8ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.content-block:first-of-type {
+    margin: 0;
+}
+
+.content-block-wrapper {
+    display: flex;
+    align-items: center;
+}
+.option-text {
+    display: inline-block;
+}
+.question-label {
+    font-size: 30px;
+}
+.question-view-item-content, .question-view-item-dropdown-content {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.question-dropdown-options {
+    margin: 15px;
+}
+.question-label-options {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f8e5f8;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.question-options, .questions {
+    display: flex;
+    flex-direction: column;
+}
+.text-option {
+    font-size: 17px;
+    margin-top: 15px;
+    padding: 0 5px 0 5px;
+    display: flex;
+    align-items: center;
+}
+.option-text {
+    margin-left: 5px;
+}
+.container input[type='button'] {
+    width: 300px;
+    height: 100px;
+    background-color: #c24fc2;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.container input[value='Ввести'] {
+    width: 100px;
+    height: 40px;
+    margin: 0;
+    margin-left: 20px;
+}
+label[for="group"], label[for="speciality"] {
+    font-size: 20px;
+}
+input[name="group"], input[name="speciality"] {
+    height: 40px;
+    margin-left: 10px;
+    background-color: #f1c0f1;
+}
+.questions {
+    justify-content: space-around;
+    height: 420px;
+    font-size: 18px;
+    align-self: center;
+}
+.question-view-item {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.question-view-item .question-options {
+    justify-content: space-between;
+    align-items: center;
+}
+.question-view-item .question-options .text-option~*~*~*~ {
+    margin: 0;
+}
+p[draggable='true'] {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #e4a2e4;
+    padding: 5px;
+}
+input[type="button"]:hover {
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+

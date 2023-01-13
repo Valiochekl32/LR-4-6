@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>LR-4</title>
+</head>
+<body>
+    <header>
+        <div class="content-block ">
+            <h1>Адаптивний веб-дизайн. Grid CSS</h1>
+            <div class="descr">ТР-13 | Корченюк Валентин Олексійович</div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="#">
+            <div class="content-block">
+                <div class="content-block-wrapper">
+                    <label for="group">Введіть свої ім'я та групу</label>
+                    <input type="text" name="group" onchange="document.querySelector('.name-group').innerHTML = this.value; this.value = null;">
+                    <input type="button" value="Ввести">
+                    <div class="name-group"></div>
+                </div>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 1</div>
+                <div class="question-view-item-content">
+                    <strong>Медіа-запити - це...</strong> 
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="radio" name="variant1">
+                        <div class="option-text">правила CSS, які дозволяють керувати стилями елементів залежно від значень технічних параметрів пристроїв</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant1">
+                        <div class="option-text">правила CSS, які дозволяють створювати запити на різних пристроях</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant1">
+                        <div class="option-text">пошукові (ключові) слова, які створює користувач</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant1">
+                        <div class="option-text">пошукові (ключові) слова, які створює користувач через різні браузери</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 2</div>
+                <div class="question-view-item-content">
+                    <strong>Створення макету та його складових з розмірами, поданими у відсотках.</strong> 
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="radio" name="variant2">
+                        <div class="option-text">гумова верстка</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant2">
+                        <div class="option-text">брейкпоінт</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant2">
+                        <div class="option-text">медіа-запит</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant2">
+                        <div class="option-text">модуль flexbox</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant2">
+                        <div class="option-text">модуль grid</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 3</div>
+                <div class="question-view-item-content">
+                    <strong>Прив'язка до конкретних пристроїв з певною роздільною здатністю екрану</strong> 
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="radio" name="variant3">
+                        <div class="option-text">брейкпоінт</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant3">
+                        <div class="option-text">гумова верстка</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant3">
+                        <div class="option-text">медіа-запит</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant3">
+                        <div class="option-text">модуль flex</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant3">
+                        <div class="option-text">модуль grid</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 4</div>
+                <div class="question-view-item-content">
+                    <strong>Grid-контейнер - це...</strong> 
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="radio" name="variant4">
+                        <div class="option-text">набір горизонтальних та вертикальних ліній, що задані певним геометричним описом</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant4">
+                        <div class="option-text">набір горизонтальних та вертикальних grid-ліній, що не перетинаються</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant4">
+                        <div class="option-text">набір горизонтальних та вертикальних grid-ліній, що перетинаються</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant4">
+                        <div class="option-text">технологія, що ставить на меті зробити шари гнучкими</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant4">
+                        <div class="option-text">одна з підкатегорій flex-модуля</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 5</div>
+                <div class="question-view-item-content">
+                    <strong>grid-template-columns: repeat (auto-fit, minmax (250px, 1fr)); Про що говорить цей рядок?</strong>
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="radio" name="variant5">
+                        <div class="option-text">максимально заповнити рядок. Колонки повинні бути фіксованою ширини і не повинні переноситися.</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant5">
+                        <div class="option-text">дивний запис. Так у грідах робити не можна.</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant5">
+                        <div class="option-text">ці ключові слова говорять браузеру переносити елементи на новий рядок, якщо не вистачає ширини, щоб вмістити їх без перекриття</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant5">
+                        <div class="option-text">розмістити одну колонку без перекриття</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="radio" name="variant5">
+                        <div class="option-text">створювати статичні колонки по 250px у ширину</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block -dropdown">
+                <div class="question-label">Запитання 6</div>
+                <label for="vrnts1" class="question-view-item-dropdown-content">
+                    <strong>Оберіть фрагмент коду, де колонки створено у співвідношенні 1:3</strong>
+                </label>
+                <select name="vrnts1" class="question-dropdown-options">
+                    <option name="vrnt1" class="dropdown-option-text">grid-template-rows: 100px 300px; grid-template-columns: 150px 350px;</option>
+                    <option name="vrnt1" class="dropdown-option-text">grid-template-areas: '1fr' '3fr';</option>
+                    <option name="vrnt1" class="dropdown-option-text">grid-template-columns: 1fr 3fr;</option>
+                    <option name="vrnt1" class="dropdown-option-text">grid-template-colums: 10% 30px;</option>
+                </select>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 7</div>
+                <div class="question-view-item-content">
+                    <strong>Вкажіть основні особливості адаптивного дизайну:</strong>
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="checkbox" name="check1">
+                        <div class="option-text">застосування гнучкого макета на основі сітки</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check1">
+                        <div class="option-text">робота з медіа-запитами</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check1">
+                        <div class="option-text">зміна зовнішніх параметрів налаштування контенту</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check1">
+                        <div class="option-text">використання гнучких зображень</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check1">
+                        <div class="option-text">перебудова блоків за бажання користувача</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check1">
+                        <div class="option-text">зменшення можливостей сайту в залежності від розміру екрану пристрою</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block ">
+                <div class="question-label">Запитання 8</div>
+                <div class="question-view-item-content">
+                    <strong>Оберіть правильні твердження</strong>
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-options">
+                    <div class="text-option">
+                        <input type="checkbox" name="check2">
+                        <div class="option-text">grid-контейнер є зручним для роботи з двома осями</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check2">
+                        <div class="option-text">flex та grid не можуть використовуватись в одному проекті</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check2">
+                        <div class="option-text">при використанні grid-розмітки необхідно використовувати єдині одиниці виміру</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check2">
+                        <div class="option-text">елементи з "display: grid" неможливо вирівняти за допомогою "margin: 0 auto"</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check2">
+                        <div class="option-text">grid-елементи можуть використовуватись для адаптації сайту</div>
+                    </div>
+                    <div class="text-option">
+                        <input type="checkbox" name="check2">
+                        <div class="option-text">відступи між комірками гріда можна задати комбінованою властивістю</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="question-label">Запитання 9</div>
+                <div class="question-view-item-content">
+                    <strong>Встановіть відповідність</strong>
+                </div>
+                <div class="question-label-options">
+                    <span>варіанти відповідей</span>
+                </div>
+                <div class="question-view-item">
+                    <div class="questions">
+                        <div class="questions-question" name="1">Комірка розміром в 3 колонки та 2 ряди:</div>
+                        <hr>
+                        <div class="questions-question" name="2">Комірка розміром в 1 колонку та 5 рядів:</div>
+                        <hr>
+                        <div class="questions-question" name="3">grid-template включає в себе:</div>
+                        <hr>
+                        <div class="questions-question" name="4">grid включає в себе:</div>
+                    </div>
+                    <div class="question-options">
+                        <div class="drag">
+                            <p draggable="true" id="1">grid-column: 1 / 4; <br> grid-row: 1 / 3;</p>
+                        </div>
+                        <div class="drag">
+                            <p draggable="true" id="2">grid-row: 1 / 6; <br> grid-column: 3 / 4;</p>
+                        </div>
+                        <div class="drag">
+                            <p draggable="true" id="3">grid-template-rows, <br> grid-template-columns, <br> grid-template-areas</p>
+                        </div>
+                        <div class="drag">
+                            <p draggable="true" id="4">grid-template-rows, <br> grid-auto-flow, <br> grid-template-columns, <br> grid-template-areas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="question-label">Запитання 10</div>
+                <label for="vrnts2" class="question-view-item-dropdown-content">
+                    <strong>Наскільки великим повинен бути кожен стовпець у системі сітки з 12 стовпців?</strong>
+                </label>
+                <select name="vrnts2" class="question-dropdown-options">
+                    <option name="vrnt2" class="dropdown-option-text">10%</option>
+                    <option name="vrnt2" class="dropdown-option-text">8,3%</option>
+                    <option name="vrnt2" class="dropdown-option-text">12%</option>
+                    <option name="vrnt2" class="dropdown-option-text">5,6%</option>
+                </select>
+            </div>
+            <input type="button" value="Перевірити тест"  onclick="getScore()">
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>

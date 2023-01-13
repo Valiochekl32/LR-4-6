@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LR_5</title>
+</head>
+<body>
+    <header>
+        <div class="content-block ">
+            <h1>POP JS</h1>
+            <div class="descr">ТР-13 | Корченюк Валентин Олексійович</div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="#">
+            <div class="content-block">
+                <div class="content-block-wrapper" style="flex-direction: column;">
+                    <label for="speciality" style="margin-bottom: 5px;">Введіть свою спеціальність</label>
+                    <input type="text" name="speciality">
+                    <input type="button" value="Ввести" style="margin: 10px 0 10px 0;" onclick="getStudentSpeciality()">
+                    <label for="group" style="margin-bottom: 5px;">Введіть свою групу</label>
+                    <input type="text" name="group">
+                    <input type="button" value="Ввести" style="margin: 10px 0 10px 0;" onclick="getStudentGroup()">
+                    <input type="button" value="Очистити" onclick="wipeStudentData()">
+                    <input type="button" value="Дані прототипа студента" style="margin: 20px 0 0 0;" onclick="SomeGuy.showData();">
+                    <input type="button" value="Дані копії користувача" style="margin: 20px 0 0 0;" onclick="showUserCopy();">
+                    <input type="button" value="Дані копії студента" style="margin: 20px 0 0 0;" onclick="showStudentCopy();">
+                    <input type="button" value="Результати тесту" style="margin: 20px 0 0 0;" onclick="getProgress();">
+                    <input type="button" value="Показати прогрес" style="margin: 20px 0 0 0;" onclick="Progress.showData();">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/pop.js"></script>
+</body>
+</html>
