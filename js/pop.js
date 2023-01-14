@@ -52,34 +52,34 @@ var Progress = {
 //student class with getters/setters
 
 class StudentClass {
-    constructor(specialty, group) {
-        this.specialty = specialty;
+    constructor(speciality, group) {
+        this.speciality = speciality;
         this.group = group;
     }
 
-    set setSpecialty(specialty) {
-        this.specialty = specialty;
+    set setSpeciality(speciality) {
+        this.speciality = speciality;
     }
 
     set setGroup(group) {
         this.group = group;
     }
 
-    get getSpecialty() {
-        return this.specialty;
+    get getSpeciality() {
+        return this.speciality;
     }
 
     get getGroup() {
         return this.group;
     }
 
+    showData() {
+        console.log('Speciality: ' + this.speciality + '\nGroup: ' + this.group);
+    }
+
     deleteData() {
         this.speciality = "";
         this.group = "";
-    }
-
-    showData() {
-        console.log('Specialty: ' + this.specialty + '\nGroup: ' + this.group);
     }
 }
 
@@ -136,4 +136,18 @@ function getProgress() {
     }
 
     console.log(`Загальна оцінка: ${Progress.getAverageGrade()}`);
+}
+
+//building student class obj
+
+function studentData() {
+    var newStudent = new StudentClass(prompt("Введіть спеціальність студента"), 
+      prompt("Введіть групу студента"));
+    
+    console.log('Поточні дані');
+    newStudent.showData();
+
+    console.log('Очищення даних');
+    newStudent.deleteData();
+    newStudent.showData();
 }
